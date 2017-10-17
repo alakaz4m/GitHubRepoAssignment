@@ -1,0 +1,9 @@
+md GitHubRepoAssignment
+cd GitHubRepoAssignment
+git init
+copy NUL readme.md
+git status
+git add .
+git commit -m "Added content to readme.md"
+git remote add origin https://github.com/michael-kravitz/GitHubRepoAssignment.git
+git push -u origin master

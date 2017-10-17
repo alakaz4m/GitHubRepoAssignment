@@ -1,0 +1,48 @@
+#wrapper{
+  display: inline-block;
+  height: 770px;
+  width: 830px;
+  background-color: #d5d2ae;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 0px 30px 40px 30px;
+}
+#titleheader{
+  text-align: center;
+}
+h1{
+  display: inline-block;
+  font-size: 46px;
+}
+img.imgheader{
+  margin-top: 30px;
+  height: 60px;
+  width:120px;
+}
+.row{
+  text-align: center;
+}
+img.imgbox{
+  padding-top: 15px;
+  width: 120px;
+  height: 120px;
+}
+.blueBox{
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  background-color: #74B6EC;
+  border: 3px solid black;
+  margin: 1px;
+  padding: 1px;
+}
+.redBox{
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  background-color: #F8686E;
+  border: 3px solid black;
+  margin: 3px;
+  padding: 1px;
+}

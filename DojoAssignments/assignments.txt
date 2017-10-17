@@ -1,0 +1,12 @@
+C:\Users\Michael\Desktop\DojoAssignments\iOS
+C:\Users\Michael\Desktop\DojoAssignments\MEAN
+C:\Users\Michael\Desktop\DojoAssignments\netCore
+C:\Users\Michael\Desktop\DojoAssignments\Python
+C:\Users\Michael\Desktop\DojoAssignments\Ruby
+C:\Users\Michael\Desktop\DojoAssignments\WebFundamentals
+C:\Users\Michael\Desktop\DojoAssignments\iOS\about.txt
+C:\Users\Michael\Desktop\DojoAssignments\MEAN\about.txt
+C:\Users\Michael\Desktop\DojoAssignments\netCore\about.txt
+C:\Users\Michael\Desktop\DojoAssignments\Python\about.txt
+C:\Users\Michael\Desktop\DojoAssignments\Ruby\about.txt
+C:\Users\Michael\Desktop\DojoAssignments\WebFundamentals\about.txt

@@ -1,1 +1,1 @@
-Assignment text
+These are all the assignments I have done at CodingDojo. These projects show my progress from day one to graduation day.
