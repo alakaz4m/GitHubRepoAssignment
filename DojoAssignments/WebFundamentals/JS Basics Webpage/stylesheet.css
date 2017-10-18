@@ -1,0 +1,111 @@
+#header{
+  background-color: #12355B;
+  width: 970px;
+  height: auto;
+  padding: 5px;
+}
+#headerbg{
+  background-color: #D72638;
+  width: 950px;
+  height: 70px;
+  margin: 10px;
+  border-radius: 10px;
+}
+h1{
+  color: #ccdbe6;
+  margin:20px;
+  margin-top: -65px;
+}
+#nav-menu{
+  display: inline-block;
+  background-color: #087E8A;
+  width: 200px;
+  height: 230px;
+  margin: 10px;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius:10px;
+}
+p#nav-home{
+  color: cyan;
+  margin-top: 8px;
+  margin-left: 16px;
+  text-decoration: underline;
+}
+ul#nav{
+  margin-left: 9px;
+  margin-bottom: -20px;
+  color: cyan;
+  text-decoration: underline;
+}
+li#js_overview{
+  margin-top: -10px;
+  margin-left: -12px;
+}
+li.chapters{
+  list-style-type: circle;
+  margin-left:10px;
+}
+li#projects{
+  margin-left: -12px;
+}
+li#assignments{
+  margin-left: -12px;
+}
+li#quiz{
+  margin-left: -12px;
+}
+#chaptercontent{
+  background-color: #0D1721;
+  margin-left: 245px;
+  margin-top: -240px;
+  width: 715px;
+  height: auto;
+  border-radius: 10px;
+  display: inline-block;
+}
+h2{
+  display: inline-block;
+  color: #ccdbe6;
+  margin-left: 20px;
+}
+p#content{
+  color: #ccdbe6;
+  margin-left: 20px;
+  margin-top: -15;
+  margin-right: 1px;
+}
+p.underlined_text{
+  color: cyan;
+  text-decoration:underline;
+  display: inline;
+}
+p.bluetext{
+  color:#5c5cc3;
+  display: inline;
+}
+ul#chapterbulletins{
+  color: #ccdbe6;
+  margin-right: 6px;
+}
+#bg_wrap{
+  background-color:#5C6672;
+  width: 940px;
+  height: 50px;
+  margin: 20px;
+  border-radius: 14px;
+  display: inline-block;
+}
+p#bottomtext{
+ color: #ccdbe6;
+ margin-left:40px;
+ margin-top: -55px;
+ position: absolute;
+}
+a{
+  display: inline;
+  position: absolute;
+  color: cyan;
+  margin-left: 350px;
+  margin-top: -55px;
+}
