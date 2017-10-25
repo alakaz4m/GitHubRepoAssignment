@@ -1,0 +1,1 @@
+The original assignment uses html tags inside the body, but I used JavaScript and the jQuery library to create the image slides. This was my first time doing this method.

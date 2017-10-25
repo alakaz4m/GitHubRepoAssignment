@@ -1,0 +1,226 @@
+<DOCTYPE! html>
+	<html lang="en">
+
+	<head>
+		<title>jquery fun</title>
+		<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				
+				$('div#helloclass').css
+				$('img#catpic').hide();
+				$('div#scary').hide();
+				$('p#joke2').hide();
+				$('p#hax').hide();
+				$('div#scary').css({
+					'color': 'red',
+					'background-color': 'purple',
+					'font-size': '30px',
+					'margin-top': '10px',
+					'width': '100px'
+				})
+				$('p#joke').css({
+					'color': 'red'
+				});
+				$('p#joke2').css({
+					'color': 'red',
+					'font-size': '100px'
+				});
+				$('fieldset').css({
+					'color': 'blue',
+					'font-size': '32px'
+				});
+
+				
+				$('#clickMe button').click(function() {
+					alert('You clicked!');
+				});
+				$('#hideMe button').click(function() {
+					$('#hideMe img').hide();
+				});
+				$('#showMe button').click(function() {
+					$('p#joke2').show();
+				});
+				$('#toggleHax').click(function() {
+					$('p#hax').toggle();
+
+				});
+				$('#slideDown button').click(function() {
+					$('div#scary').slideDown();
+				});
+				$('#slideUp button').click(function() {
+					$('div#slide2').slideUp();
+				});
+				$('#slideToggle button').click(function(){
+					$('div#slidetogg').slideToggle();
+				});
+				$('#fadeIn button').click(function(){
+					$('img#catpic').fadeIn();
+				})
+				$('#fadeOut button').click(function(){
+					$('img#catpic2').fadeOut();
+				})
+				$('#addClass button').click(function(){
+					$('div#gimmeclass').text('This text is cooler now')
+					$('div#gimmeclass').addClass('helloclass');
+				})
+				$('#before button').hover(function(){
+					$('#before p').before(' more bacon ')	
+				})
+				$('#after button').hover(function(){
+					$('#after p').before(' more pizza ')	
+				})
+				$('#append button').click(function(){
+					$('#append p').append('<br>works good ')
+				})
+				$('#htmlcontent button').click(function(){
+					var pString = $('div#textscrape').html();
+					$('p#container').text(pString);
+				})
+				$('#attribute button').click(function(){
+					var atrrString = $('fieldset').attr('id');
+					$('p#container2').text(atrrString);
+				})
+				$('#values button').click(function(){
+					var valString = $('textarea').val();
+					$('p#container3').text(valString);
+				})
+				$('#textfield button').click(function(){
+					$('legend').text('404 not found.')
+				})
+				$('#myData button').click(function(){
+					$('#myData div').data("myName", "Michael");
+					$('#myData div').text($('#myData div').data("myName"))
+				})
+				$('#myData button#button2').click(function(){
+					$('#myData div').data("myName", "scrub");
+					$('#myData div').text($('#myData div').data("myName"))
+				})
+				
+			})
+
+		</script>
+		<style>
+			.helloclass{
+				font-size: 20px;
+				color: red;
+				font-weight: bold;
+			};
+		</style>
+	</head>
+
+	<body>
+	<div id="textscrape">this is some text that im going to grab later on</div>
+		<fieldset id="clickMe">
+			<legend>.click();</legend>
+			<button>Click me</button>
+		</fieldset>
+
+		<fieldset id='hideMe'>
+			<legend>.hide();</legend>
+			<img src="image.png">
+			<button>Hide image</button>
+		</fieldset>
+
+		<fieldset id="showMe">
+			<legend>.show();</legend>
+			<p id="joke">Why was the strawberry sad?</p>
+			<p id="joke2">It was in a jam!</p>
+			<button>Click to reveal!</button>
+		</fieldset>
+
+		<fieldset id="toggleHax">
+			<legend>.toggle();</legend>
+			<p id="hax">H4x toggled</p>
+			<button>Click to toggle</button>
+		</fieldset>
+
+		<fieldset id='slideDown'>
+			<legend>.slideDown();</legend>
+			<button>slide it down</button>
+			<div id="scary">Told you not to slide it!</div>
+		</fieldset>
+
+		<fieldset id="slideUp">
+			<legend>.SlideUp();</legend>
+			<button>slide it up</button>
+			<div id="slide2">~Ahoy matey~</div>
+		</fieldset>
+
+		<fieldset id="slideToggle">
+			<legend>.slideToggle();</legend>
+			<button>Toggle Me!</button>
+			<div id="slidetogg">Toggle Me!</div>
+		</fieldset>
+		
+		<fieldset id="fadeIn">
+			<legend>.fadeIn();</legend>
+			<button>catch this fade</button>
+			<img id='catpic' src="femcat.png">
+		</fieldset>
+		
+		<fieldset id='fadeOut'>
+			<legend>.fadeOut();</legend>
+			<button>catch this fade</button>
+			<img id='catpic2' src="cozy_cat_home.jpg">
+		</fieldset>
+		
+		<fieldset id='addClass'>
+			<legend>.addClass();</legend>
+			<button>click me</button>
+			<div id="gimmeclass">This text is normal</div>
+		</fieldset>
+		
+		<fieldset id='before'>
+			<legend>.before()</legend>
+			<button>hover over me</button>
+			<p>loren ipsum stuff</p>
+		</fieldset>
+		
+		<fieldset id='after'>
+			<legend>.afer()</legend>
+			<button>hover over me</button>
+			<p>loren ipsum stuff</p>
+		</fieldset>
+		
+		<fieldset id='append'>
+			<legend>.append();</legend>
+			<button>click me</button>
+			<p>loren ipsum stuff </p>
+		</fieldset>
+		
+		<fieldset id="htmlcontent">
+			<legend>.html();</legend>
+			<button>click dis</button>
+			<p id="container">container</p>
+		</fieldset>
+		
+		<fieldset id="attribute">
+			<legend>.attr();</legend>
+			<button>click me.</button>
+			<p id="container2">attribute is: </p>
+		</fieldset>
+		
+		<fieldset id="values">
+			<legend>.value();</legend>
+			<button>clicketh me-ith.</button>
+			<textarea placeholder="Enter text Here and press button"></textarea>
+			<p id="container3">value is: </p>
+		</fieldset>
+		
+		<fieldset id="textfield">
+			<legend>.text();</legend>
+			<img src="meme.jpg" width= 100px>
+			<button>h4x the web</button>
+		</fieldset>
+		
+		<fieldset id="myData">
+			<legend>.data();</legend>
+			<div>a div</div>
+			<button>grab data from div</button>
+			<button id="button2">set data to "scrub"</button>
+		</fieldset>
+
+	</body>
+
+	</html>

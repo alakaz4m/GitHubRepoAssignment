@@ -1,0 +1,49 @@
+<DOCTYPE! html>
+	<html>
+
+	<head>
+		<title>All the images!</title>
+		<style>
+			div {
+				width: 1300px;
+			}
+
+			img {
+				margin: 10px;
+				width: 300px;
+			}
+
+			button {
+				margin-top: 20px;
+				color: white;
+				background-color: purple;
+			}
+
+		</style>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			var htmlString = "";
+			for(var i = 0; i < 8; i++){
+				htmlString += "<img src=meme.jpg>";
+			};
+			$(document).ready(function(){
+				$('#images').append(htmlString);
+				$('img').click(function(){
+					$(this).hide('slow');
+				})
+			});
+		</script>
+		<meta name="description" content="This page uses jQuery to create a image hide function">
+	</head>
+
+	<body>
+		<div id="images">
+			<h1>All the images!</h1>
+			
+		</div>
+		<button>Restore</button>
+
+
+	</body>
+
+	</html>

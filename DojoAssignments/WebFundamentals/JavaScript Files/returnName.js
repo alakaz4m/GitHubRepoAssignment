@@ -1,10 +1,4 @@
-<DOCTYPE! html>
-	<html>
-
-	<head>
-		<script>
-			"use strict";
-			var students = [
+var students = [
 	{
 		first_name: 'Michael',
 		last_name: 'Jordan'
@@ -23,17 +17,8 @@
 	}
 ]
 
-function returnName(){
-	for(var i = 0; i < students.length; i++){
+function returnName() {
+	for (var i = 0; i < students.length; i++) {
 		console.log(i + 1 + " - " + students[i].first_name + students[i].last_name);
 	}
 }
-
-		</script>
-	</head>
-
-	<body>
-
-	</body>
-
-	</html>

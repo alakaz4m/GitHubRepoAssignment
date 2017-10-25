@@ -1,0 +1,43 @@
+<DOCTYPE! html>
+	<html>
+
+	<head>
+		<title>Ultimate Cute Cat Puzzle</title>
+		<style>
+			div {
+				width: 360px;
+			}
+
+			img {
+				margin-bottom: 3px;
+				max-width: 360px;
+			}
+
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			var imgArray = [];
+			var ninjaArray = [];
+			var catArray = [];
+			for (var i = 0; i < 5; i++) {
+				ninjaArray.push("ninja" + i);
+				catArray.push("cat" + i);
+				imgArray.push("<img src='img/cat" + i + ".png'" + "data-alt-src='img/ninja" + i + ".png' temp=''>");
+			};
+			$(document).ready(function() {
+				$('div.slices').append(imgArray);
+				$('img').on('click', function() {
+					$(this).attr('temp', $(this).attr('src'));
+					$(this).attr('src', $(this).attr('data-alt-src'));
+					$(this).attr('data-alt-src', $(this).attr('temp'))
+					});
+			});
+
+		</script>
+	</head>
+
+	<body>
+		<div class="slices"></div>
+	</body>
+
+	</html>

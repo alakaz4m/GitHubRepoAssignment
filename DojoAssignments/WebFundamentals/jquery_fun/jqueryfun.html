@@ -1,0 +1,41 @@
+<DOCTYPE! html>
+	<html>
+
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="">
+		<script>
+			$(document).ready(function() {
+				$('h2').hide();
+				$('p').hide();
+				$('h1').css({
+					"display": "inline"
+				})
+
+				$('h1').hover(function() {
+						$('h1').css({
+							"color": "white",
+							"background-color": "black"
+						});
+					},
+					function() {
+						$('h1').css({
+							"color": "black",
+							"background-color": "white"
+						})
+						$('h2').show();
+						$('h1').hide();
+					}
+				);
+			});
+
+		</script>
+	</head>
+
+	<body>
+		<h1>//The Space Ship\\</h1>
+		<h2>//Initiating warp drive...\\</h2>
+		<p>//Welcome to space, cap'n...\\</p>
+	</body>
+
+	</html>
