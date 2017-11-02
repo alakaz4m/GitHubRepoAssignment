@@ -1,0 +1,16 @@
+#container{
+	position: absolute;
+	width: 1900px;
+	height: 792px;
+	background-image: url(pokemons.PNG);
+	background-color: lightgreen;
+	
+}
+
+.poke{
+	position: relative;
+	width: 92px;
+	height: 92px;
+	margin: 3px;
+	display: inline-block;
+}

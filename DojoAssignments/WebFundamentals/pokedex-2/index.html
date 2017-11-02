@@ -1,0 +1,51 @@
+<DOCTYPE! html>
+<html lang="en">
+	<head>
+<!--	<img id="2" src="http://pokeapi.co/media/img/2.png">
+-->
+		<title>Pokedex</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+		$(function(){
+			for (var i = 1; i<=151; i++){
+				var pokeImg = "<div id="+ i+ " class='pokes'><img id='" + i + "'src=http://pokeapi.co/media/img/" + i + ".png></div>";
+				$('#container').append(pokeImg);
+			}
+			$(document).on('click', 'img' ,function(){
+				var pokeId = $(this).attr('id')
+				$.get('http://pokeapi.co/api/v1/pokemon/' + pokeId, function(res){
+					console.log(res['name'])
+				}, 'json')
+			})
+			
+		})
+		
+		</script>
+		<link type="text/css" rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="container">
+			
+		</div>
+		<div id="info">
+			<table>
+				<th id="name">Name</th>
+				<th id="type">Type</th>
+				<th id="height">Height</th>
+				<th id="weight">Weight</th>
+				<tr id="apiInfo">
+					<td  id="pokeName" value="name">pokeName</td>
+					<td  id="pokeType" value="type">pokeType</td>
+					<td  id="pokeHeight" value="height">pokeHeight</td>
+					<td  id="pokeWeight" value="weight">pokeWeight</td>
+				</tr>
+			</table>
+<!--
+			<h1 id="name">name</h1>
+			<h2 id="types">type</h2>
+			<h2 id="height">height</h2>
+			<h2 id="weight">weight</h2>
+-->
+		</div>
+	</body>
+<html>

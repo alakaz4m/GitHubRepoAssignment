@@ -1,0 +1,18 @@
+#container{
+	width: 970px;
+}
+
+.pokes{
+	margin: 2px;
+	display: inline-block;
+}
+
+#info{
+	position: fixed;
+	top: 218px;
+	left: 1020px;
+	height: 500px;
+	width: 330px;
+	display: inline-block;
+	background-color: seagreen;
+}

@@ -1,0 +1,17 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<title>CATCH THEM ALL, ASH</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(function(){
+				$.get("https://pokeapi.co/api/v2/pokemon/1/", function(res) {
+						$('body').append(res.types[0].type.name);
+				}, 'json');
+			})
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

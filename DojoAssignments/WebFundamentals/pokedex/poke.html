@@ -1,0 +1,61 @@
+<html>
+
+<head>
+	<title>CATCH THEM ALL, ASH</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<script>
+		//			https://pokeapi.co/api/v2/pokemon/1/ this url contains JSON info on pokemons 1-151
+
+		$(function() {
+			var divcontent, ids;
+			for (var i = 1; i <= 151; i++) { //this for loop creates the divs for the background to attach on to
+				divcontent = "<div class='poke' id='" + i + "'>";
+				$('div#container').append(divcontent);
+				$('div#container').hide();
+				$('div#container').fadeIn('slow');
+			};
+			
+			
+			$(document).on('mouseenter', '.poke', function() {
+				$(this).css({
+					"border-color": "lightgray",
+					"border-width": "3px",
+					"border-style": "solid",
+					"border-radius": "20px",
+				})
+			})
+
+			$(document).on('click', '.poke', function() {
+				var id = this.id;
+				$.get("https://pokeapi.co/api/v2/pokemon/" + id, function(res){
+				console.log(res);
+				})
+//				console.log('this id ' + pokethis);
+				$(this).css({
+					"border-color": "red",
+					"border-width": "3px",
+					"border-style": "solid",
+					"border-radius": "20px",
+					"box-shadow": "2px 2px black"
+					
+				});
+				
+			});
+			$(document).on('mouseleave', '.poke', function() {
+				$(this).css({
+					"border-width": "0px",
+					"box-shadow": "0px 0px"
+				});
+			})
+		});
+
+	</script>
+</head>
+
+<body>
+	<div id="container"></div>
+</body>
+
+</html>

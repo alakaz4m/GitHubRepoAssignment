@@ -1,0 +1,17 @@
+table{
+	margin: auto;
+	font-size: 30px;
+	border-collapse: collapse;
+}
+tr{
+	border: 1px solid black;
+}
+th{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	color: blue;
+}
+form, h1{
+	margin-left: 320px;
+}
