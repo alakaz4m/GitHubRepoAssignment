@@ -1,0 +1,67 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<title>Great Number Game</title>
+		<meta charset="utf-8">
+		<style>
+			#container{
+				margin: auto;
+				margin-top: 130px;
+				width: 30%;
+			}
+			h1,h2,h4{
+				font-family: sans-serif;
+				text-align: center;
+			}
+			form{
+				text-align: center;
+			}
+			#sbmt{
+				margin: auto;
+				margin-top: 20px;
+				display: block;
+			}
+			#entry{
+				width: 120px;
+				height: 60px;
+				text-align: center;
+				font-size: 20px;
+				border-radius: 5px;
+			}
+			
+			input#entry{
+				display: {{winner}};
+			}
+			
+			#outcome{
+				margin: auto;
+				margin-bottom: 30px;
+				padding: 10px;
+				width: 60%;
+				height: 100px;
+				text-align: center;
+				font-size: 30px;
+				border-radius: 25px;
+				display: {{outcomeshow}};
+				background-color: {{color_box}};
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Welcome to the Great Number Game!</h1>
+			<h2>I am thinking of a number between 1 and 100</h2>
+			<h4>Take a guess!</h4>
+			<div id="outcome">
+			<p>
+			{{outcome}}
+			</p>
+			</div>
+			<form action='/' method="POST">
+				<input type="text" name="guessNum" id="entry" placeholder="1-100">
+				<input type="submit" value="{{playornot}}" id="sbmt">
+			</form>
+		</div>
+	</body>
+</html>

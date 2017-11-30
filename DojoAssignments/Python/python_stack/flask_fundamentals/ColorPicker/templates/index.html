@@ -1,0 +1,23 @@
+<DOCTYPE! html>
+	<html>
+
+	<head>
+		<title>Color Picker</title>
+		<style>#container{background-color: rgb({{red}},{{green}},{{blue}});}</style>
+		
+	</head>
+
+	<body>
+		<div id="container">
+			<h1>Enter the color values below</h1>
+			<form action="/process" method="POST">
+				Red: <input type="number" name="red">
+				Green: <input type="number" name="green">
+				Blue: <input type="number" name="blue">
+				<p>All values must be between 1 and 255</p>
+				<input type="submit" value="Show my color!">
+			</form>
+		</div>
+	</body>
+
+	</html>

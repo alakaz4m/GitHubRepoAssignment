@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <form action="/results" method="POST">
+      {%csrf_token%}
+      Your Name: <input type="text" name="name">
+      Your Location:<select name="location">
+        <option>
+          New York
+        </option>
+        <option>
+          California
+        </option>
+        <option>
+          Washington
+        </option>
+      </select>
+      Favorite Language:<select name="favlanguage">
+        <option>
+          Python
+        </option>
+        <option>
+          JavaScript
+        </option>
+        <option>
+          Lua
+        </option>
+      </select>
+      <br><br>
+      Comment (Optional)<br><input type="textarea" name="comment">
+      <input type="submit">
+    </form>
+  </body>
+</html>

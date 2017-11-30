@@ -1,0 +1,63 @@
+<DOCTYPE! html>
+	<html>
+
+	<head>
+		<title>Friends</title>
+		<style>
+			table {
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+			}
+
+			td,
+			th {
+				border: 1px solid #dddddd;
+				text-align: left;
+				padding: 8px;
+			}
+
+			tr:nth-child(even) {
+				background-color: #dddddd;
+			}
+
+			h3,
+			h2 {
+				font-family: arial, sans-serif;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<h2>Friends List</h2>
+
+		<table>
+			<tr>
+				<th>
+					ID
+				</th>
+				<th>
+					Name
+				</th>
+			</tr>
+			{%for myfriends in friends:%}
+			<tr>
+				<td>
+					{{myfriends['id']}}
+				</td>
+				<td>
+					{{myfriends['first_name']}}
+				</td>
+			</tr>
+			{%endfor%}
+		</table>
+		<h3>Add a Friend</h3>
+		<form action="/add" method="POST">
+			<input type="text" name="name" placeholder="Friend's Name"><br><br> <!-- Shhhhh, Don't use breaks!! they're bad!! -->
+			<input type="submit" value="Add Friend">
+		</form>
+
+	</body>
+
+	</html>

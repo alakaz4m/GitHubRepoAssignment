@@ -51,14 +51,8 @@ class ProductSys(object):
 			self.updateStatus()
 		return self
 		
-item1 = ProductSys('Wheel of Cheese', 20,1.02)
-item2 = ProductSys('Can of Beans', 2000,1.07)
-item3 = ProductSys('Saffron', 200,1.09)
-
-item1.displayInfo()
-item1.returnItem('defective',True)
-item1.displayInfo()
+item2 = ProductSys('Can of Beans', 200,1.07)
 
 item2.displayInfo()
-item2.returnItem('like new', True)
+item2.returnItem('defective', True)
 item2.displayInfo()

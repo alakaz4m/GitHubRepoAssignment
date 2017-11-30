@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Show User</title>
+  </head>
+  <body>
+    <h1>Users</h1>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Created At</th>
+      </tr>
+      {%for users in user%}
+      <tr>
+        <td>{{users.id}}</td>
+        <td>{{users.first_name}} {{users.last_name}}</td>
+        <td>{{users.email}}</td>
+        <td>{{users.created_at}}</td>
+      </tr>
+      {%endfor%}
+    </table>
+    <a href="/users/add">Add User</a>
+  </body>
+</html>

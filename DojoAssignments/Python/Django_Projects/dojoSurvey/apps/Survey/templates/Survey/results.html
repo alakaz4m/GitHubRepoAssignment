@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      table, th, td {
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Thank you for submitting the survey! You have submitted this form {{attemps}} times now.</p>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Language</th>
+        <th>Comment</th>
+      </tr>
+      <tr>
+        <td>{{name}}</td>
+        <td>{{location}}</td>
+        <td>{{language}}</td>
+        <td>{{comment}}</td>
+      </tr>
+    </table>
+  </body>
+</html>
