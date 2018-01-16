@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cards</title>
+    <script type="text/javascript">
+    function Deck(){
+      //seperated symbols from numbers for ease of use
+      var cards = {
+        suites: ["Diamonds", "Hearts", "Spades", "Clubs"],
+        values: ["Ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King"]
+        };
+      var deck = [];
+      //completed deck
+
+      //function creates starting deck
+      this.start = function(){
+        console.log("Creating deck...");
+          //going through the array and creating suites and deck_of_cards combinations until there are 52 cards total
+        for(var i = 0; i < cards.suites.length; i++){
+          for(var j = 0; j < cards.values.length; j++){
+            deck.push = cards.values[j] + " of " + cards.suites[i];
+          console.log(deck.card)
+          }
+        }
+        //         if(cards[card][Math.floor(Math.random() * cards[card].length)] == "Diamonds"){
+        //           deck.diamonds = cards[card][Math.floor(Math.random() * cards[card].length)];
+        //         }
+        //         deck.diamonds = cards[card][Math.floor(Math.random() * cards[card].length)];
+        //         console.log(cards[card][Math.floor(Math.random() * cards[card].length)]);
+      }
+
+      this.shuffle = function(){
+        console.log("Shuffling deck")
+        for(let i = cards.suites.length - 1; i > 0; i--){
+          const j = Math.floor(Math.random() * (i + 1));
+          [cards.suites[i], cards.suites[j] = cards.suites[j], cards.suites[i]];
+        }
+        for(let x = cards.values.length - 1; x > 0; x--){
+          const v = Math.floor(Math.random() * (x + 1));
+          [cards.values[x], cards.values[v] = cards.values[v], cards.values[x]];
+        }
+      };
+    } // end of Deck function
+
+    var newDeck = new Deck();
+    newDeck.start();
+    newDeck.shuffle();
+    newDeck.start();
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

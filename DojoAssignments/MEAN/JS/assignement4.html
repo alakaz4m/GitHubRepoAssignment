@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 4</title>
+    <script type="text/javascript">
+
+      function starString(n){
+        if(n.constructor == Number){
+          stars = "*".repeat(n);
+        }
+        else if(n.constructor == String){
+          stars = n[0].toLowerCase().repeat(n.length)
+        }
+        return stars;
+      }
+
+      function drawStars(array){
+        for(var i = 0; i < array.length ; i++){
+          console.log(starString(array[i]));
+        }
+      }
+
+      // let star = starString(10);
+      // console.log(star)
+      let x = drawStars([10,5,2, "Silly", "hi", 10])
+      console.log(x);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

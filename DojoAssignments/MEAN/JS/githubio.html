@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GitHub Hunting</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <button id="myBtn">hax github</button>
+    <div id="content"></div>
+    <script type="text/javascript">
+    var dataName = document.createElement("p");
+    var button = document.getElementById('myBtn');
+    function displayName(data){
+      document.getElementById('content').appendChild(dataName);
+      dataName.innerHTML = data.login;
+      console.log(data.login);
+    };
+    document.getElementById("myBtn").onclick = function() {$.get("https://api.github.com/users/michael-kravitz", displayName)};
+    </script>
+  </body>
+</html>
