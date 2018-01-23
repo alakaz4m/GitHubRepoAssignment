@@ -1,4 +1,8 @@
-echo calling npm init -y
-call npm init -y
-echo installing express, body-parser, express-session, ejs, and dependencies..
-call npm install express body-parser express-session ejs
+ECHO calling npm init -y
+CALL npm init -y
+@echo off
+SET /P packages= "Enter 1 for custom installation or press enter for default installation: "
+
+IF "%packages%"==""(ECHO //default installation\\)
+
+IF "%packages%"=="1"(ECHO //custom installation\\)

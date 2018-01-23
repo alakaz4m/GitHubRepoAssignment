@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>All Owl</title>
+  </head>
+  <body>
+    <%if(content.length > 1){%>
+      <div class="owls">
+        <%for(var i = 0; i < content.length; i++){%>
+          <ul>
+            <li><a href="/owls/<%=content.id%>"><%= content[i].name %></a></li>
+            <li><%= content[i].type %></li>
+            <li><%= content[i].color %></li>
+          </ul>
+          <%}%>
+      </div>
+          <%}%>
+    <form class="" action="/owls/new" method="GET">
+      <input type="submit" value="Create an owl">
+    </form>
+  </body>
+</html>
